@@ -8,10 +8,10 @@
 import Foundation
 import SwiftUI
 
-struct Person: Identifiable{
+struct Person : Identifiable{
     var id = UUID()
     var name: String
-    var age: Int
+    var age: String
     var from: String
     var rank: String
     

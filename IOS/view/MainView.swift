@@ -21,10 +21,12 @@ struct MainView: View {
                     .overlay(Circle().stroke(Color(.white), lineWidth: 4))
                     .shadow(radius: 7)
                 
-                Text("Weebs figure better looking than you ex ")
+                Text("Anime bring happiness more than you ex ")
                     .fontWeight(.bold)
                     .font(.system(size:30))
                     .multilineTextAlignment(.center)
+                
+                
             }
         }
     }
