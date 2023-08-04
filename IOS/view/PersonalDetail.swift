@@ -6,24 +6,63 @@
 //
 
 import SwiftUI
+import CoreLocation
+import MapKit
 
 struct PersonalDetail: View {
     var person: Person
+    
     var body: some View {
         ZStack{
-            Color(".red")
+            Color(".white")
                 .edgesIgnoringSafeArea(.all)
-            VStack{
-                CircleImage(image: person.image)
-                Text(person.name)
-                    .font(.system(size:40))
-                    .bold()
-                    .foregroundColor(.white)
+            
+            ScrollView{
                 
+                VStack(){
+                    MapView(coordinate: person.locationCoordinate)
+                        .edgesIgnoringSafeArea(.top)
+                        .frame(height: 250)
+                    CircleImage(image: person.image)
+                        .offset(y: -100)
+                        .padding(.bottom, -100)
+                    Text(person.nickname)
+                        .font(.system(size: 40))
+                        .bold()
+                    .foregroundColor(.black)
+                    VStack(alignment: .leading){
+                        Text("Name: " + person.name)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.leading)
+                            .padding(.leading, -80)
+                        
+                        Spacer()
+                        
+                        Text("Date of Birth: " + person.birth)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.leading)
+                            .padding(.leading, -80)
+                        Spacer()
+                        
+                        Text("From: " + person.from)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.leading)
+                            .padding(.leading, -80)
+                        Spacer()
+                        
+                        Text("Description: " + person.description)
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.leading)
+                            .padding(.leading, -80)
+                    }
+                        
                 
+                    
+                
+                }
             }
+            
         }
-        .navigationTitle(person.name)
         .navigationBarTitleDisplayMode(.inline)
         
     }
@@ -31,6 +70,6 @@ struct PersonalDetail: View {
 
 struct PersonalDetail_Previews: PreviewProvider {
     static var previews: some View {
-        PersonalDetail()
+        PersonalDetail(person:rapper[0])
     }
 }

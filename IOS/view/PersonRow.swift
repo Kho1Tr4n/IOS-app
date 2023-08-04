@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContactRow: View {
+struct PersonRow: View {
     var person:Person
     
     var body: some View {
@@ -23,6 +23,11 @@ struct ContactRow: View {
 
 struct ContactRow_Previews: PreviewProvider {
     static var previews: some View {
-        ContactRow(person: persons[0])
+        Group{
+            PersonRow(person: rapper[0])
+                .previewLayout(.fixed(width: 300, height: 70))
+            PersonRow(person: rapper[1])
+                .previewLayout(.fixed(width: 300, height: 70))
+        }
     }
 }

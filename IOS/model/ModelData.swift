@@ -6,10 +6,24 @@
 //
 
 import Foundation
+import CoreLocation
 
-var persons : [Person] =
-[
-    Person(name:"Khoi Tran", age:"22", from: "Vietnam", rank: "C", imageName: ""),
-    Person(name:"Khoa Tran", age:"22", from: "Vietnam", rank: "C", imageName: ""),
-    Person(name:"Khoio Tran", age:"22", from: "Vietnam", rank: "C", imageName: ""),
-]
+var rapper = decodeJsonFromJsonFile(jsonFileName: "rappers")
+
+
+func decodeJsonFromJsonFile(jsonFileName: String) -> [Person] {
+    if let file = Bundle.main.url(forResource: jsonFileName, withExtension: "json"){
+        if let data = try? Data(contentsOf: file) {
+            do {
+                let decoder = JSONDecoder()
+                let decoded = try decoder.decode([Person].self, from: data)
+                return decoded
+            } catch let error {
+                fatalError("Failed to decode JSON: \(error)")
+            }
+        }
+    } else {
+        fatalError("Couldn't load \(jsonFileName) file")
+    }
+    return [ ] as [Person]
+}

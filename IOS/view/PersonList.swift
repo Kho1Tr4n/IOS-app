@@ -11,14 +11,14 @@ struct PersonList: View {
     var body: some View {
         
         NavigationView{
-            List (persons){ persons in
+            List (rapper){ persons in
             NavigationLink {
                 PersonalDetail(person:persons)
                 
-            } label: {ContactRow(person: persons)
+            } label: {PersonRow(person: persons)
                 
             }
-            .navigationTitle("Anime Characters")
+            .navigationTitle("Rapper")
                 
             }
         }

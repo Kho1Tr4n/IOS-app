@@ -16,11 +16,13 @@
 		2815033F2A73ABC1009C8993 /* IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815033E2A73ABC1009C8993 /* IOSUITestsLaunchTests.swift */; };
 		281503502A73AED1009C8993 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815034F2A73AED1009C8993 /* CircleImage.swift */; };
 		281503562A73B27A009C8993 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281503552A73B27A009C8993 /* Person.swift */; };
-		281503582A73B5AC009C8993 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281503572A73B5AC009C8993 /* MainView.swift */; };
-		28CA57022A7B7C6B0052B98A /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA57012A7B7C6B0052B98A /* InfoView.swift */; };
+		281503582A73B5AC009C8993 /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281503572A73B5AC009C8993 /* GreetingView.swift */; };
+		282582DD2A7CF56300D6B3AA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282582DC2A7CF56300D6B3AA /* MapView.swift */; };
+		282582E12A7CF73F00D6B3AA /* rappers.json in Resources */ = {isa = PBXBuildFile; fileRef = 282582E02A7CF73F00D6B3AA /* rappers.json */; };
+		282582E32A7CF92400D6B3AA /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282582E22A7CF92400D6B3AA /* WelcomeView.swift */; };
 		28CA57052A7B82970052B98A /* PersonalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA57042A7B82970052B98A /* PersonalDetail.swift */; };
 		28CA57072A7B83AD0052B98A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA57062A7B83AD0052B98A /* ModelData.swift */; };
-		28CA57092A7B84550052B98A /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA57082A7B84550052B98A /* ContactRow.swift */; };
+		28CA57092A7B84550052B98A /* PersonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA57082A7B84550052B98A /* PersonRow.swift */; };
 		28CA570B2A7B87F10052B98A /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA570A2A7B87F10052B98A /* PersonList.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,11 +56,13 @@
 		2815033E2A73ABC1009C8993 /* IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2815034F2A73AED1009C8993 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		281503552A73B27A009C8993 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		281503572A73B5AC009C8993 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		28CA57012A7B7C6B0052B98A /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		281503572A73B5AC009C8993 /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
+		282582DC2A7CF56300D6B3AA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		282582E02A7CF73F00D6B3AA /* rappers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rappers.json; sourceTree = "<group>"; };
+		282582E22A7CF92400D6B3AA /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		28CA57042A7B82970052B98A /* PersonalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetail.swift; sourceTree = "<group>"; };
 		28CA57062A7B83AD0052B98A /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		28CA57082A7B84550052B98A /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
+		28CA57082A7B84550052B98A /* PersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRow.swift; sourceTree = "<group>"; };
 		28CA570A2A7B87F10052B98A /* PersonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +154,7 @@
 			children = (
 				281503552A73B27A009C8993 /* Person.swift */,
 				28CA57062A7B83AD0052B98A /* ModelData.swift */,
+				282582E02A7CF73F00D6B3AA /* rappers.json */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -158,11 +163,12 @@
 			isa = PBXGroup;
 			children = (
 				2815034F2A73AED1009C8993 /* CircleImage.swift */,
-				281503572A73B5AC009C8993 /* MainView.swift */,
-				28CA57012A7B7C6B0052B98A /* InfoView.swift */,
+				281503572A73B5AC009C8993 /* GreetingView.swift */,
 				28CA57042A7B82970052B98A /* PersonalDetail.swift */,
-				28CA57082A7B84550052B98A /* ContactRow.swift */,
+				28CA57082A7B84550052B98A /* PersonRow.swift */,
 				28CA570A2A7B87F10052B98A /* PersonList.swift */,
+				282582DC2A7CF56300D6B3AA /* MapView.swift */,
+				282582E22A7CF92400D6B3AA /* WelcomeView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 			files = (
 				281503292A73ABC1009C8993 /* Preview Assets.xcassets in Resources */,
 				281503262A73ABC1009C8993 /* Assets.xcassets in Resources */,
+				282582E12A7CF73F00D6B3AA /* rappers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,12 +306,13 @@
 			files = (
 				281503502A73AED1009C8993 /* CircleImage.swift in Sources */,
 				281503562A73B27A009C8993 /* Person.swift in Sources */,
-				28CA57092A7B84550052B98A /* ContactRow.swift in Sources */,
+				28CA57092A7B84550052B98A /* PersonRow.swift in Sources */,
 				281503242A73ABBF009C8993 /* ContentView.swift in Sources */,
 				28CA57052A7B82970052B98A /* PersonalDetail.swift in Sources */,
-				281503582A73B5AC009C8993 /* MainView.swift in Sources */,
+				281503582A73B5AC009C8993 /* GreetingView.swift in Sources */,
+				282582E32A7CF92400D6B3AA /* WelcomeView.swift in Sources */,
 				28CA57072A7B83AD0052B98A /* ModelData.swift in Sources */,
-				28CA57022A7B7C6B0052B98A /* InfoView.swift in Sources */,
+				282582DD2A7CF56300D6B3AA /* MapView.swift in Sources */,
 				28CA570B2A7B87F10052B98A /* PersonList.swift in Sources */,
 				281503222A73ABBF009C8993 /* IOSApp.swift in Sources */,
 			);
