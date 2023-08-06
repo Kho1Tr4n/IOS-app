@@ -25,7 +25,7 @@ struct PersonalDetail: View {
             ScrollView{
                 VStack(){
                     
-                    MapView(rapper:rapper[0])
+                    MapView(rapper:person)
                         .edgesIgnoringSafeArea(.top)
                         .frame(height: 250)
                     CircleImage(image: person.image)
