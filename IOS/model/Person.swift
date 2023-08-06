@@ -1,9 +1,18 @@
 //
 //  test.swift
 //  IOS
-//
-//  Created by Khoi Tran Minh on 28/07/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Tran Minh Khoi
+  ID: s3916827
+  Created  date: 28/07/2023
+  Last modified: 06/08/2023
+  Acknowledgement: Apple Development Web, Canvas
+*/
+
 
 import Foundation
 import SwiftUI

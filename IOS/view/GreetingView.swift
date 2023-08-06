@@ -1,16 +1,18 @@
-//
-//  MainView.swift
-//  IOS
-//
-//  Created by Khoi Tran Minh on 28/07/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Tran Minh Khoi
+  ID: s3916827
+  Created  date: 28/07/2023
+  Last modified: 06/08/2023
+  Acknowledgement: Apple Development Web, Canvas
+*/
 
 import SwiftUI
 
-//enum Theme {
-//    static let dark = Color("Dark")
-//    static let light = Color("Light")
-//}
+
 
 struct GreetingView: View {
     @State var showAlert:Bool
@@ -20,10 +22,8 @@ struct GreetingView: View {
     
     var body: some View {
         ZStack {
-//            Color(isDarkMode ? "Dark" : "Light").ignoresSafeArea(.all)
-            
-            
 
+        
             VStack{
                 Image("logo")
                     .resizable()
