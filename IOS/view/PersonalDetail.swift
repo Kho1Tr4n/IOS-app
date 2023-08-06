@@ -12,15 +12,14 @@ import MapKit
 struct PersonalDetail: View {
     var person: Person
     
+    
     var body: some View {
         ZStack{
-            Color(".white")
-                .edgesIgnoringSafeArea(.all)
             
             ScrollView{
-                
                 VStack(){
-                    MapView(coordinate: person.locationCoordinate)
+                    
+                    MapView(rapper:rapper[0])
                         .edgesIgnoringSafeArea(.top)
                         .frame(height: 250)
                     CircleImage(image: person.image)
@@ -31,29 +30,65 @@ struct PersonalDetail: View {
                         .bold()
                     .foregroundColor(.black)
                     VStack(alignment: .leading){
-                        Text("Name: " + person.name)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.leading)
-                            .padding(.leading, -80)
+                        
+                        HStack{
+                            Text("\nName: " )
+                                .underline()
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.leading)
+                                .padding(.leading, 5)
+                            Text("\n" + person.name)
+                                .multilineTextAlignment(.leading)
+                                .padding(.leading, 5)
+                        }
+                        
                         
                         Spacer()
                         
-                        Text("Date of Birth: " + person.birth)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.leading)
-                            .padding(.leading, -80)
+                        HStack{
+                            Text("Date of Birth: " )
+                                .underline()
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.leading)
+                                .padding(.leading, 5)
+                            Text(person.birth)
+                        }
                         Spacer()
                         
-                        Text("From: " + person.from)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.leading)
-                            .padding(.leading, -80)
+                        HStack{
+                            Text("From: "  )
+                                .underline()
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.leading)
+                                .padding(.leading, 5)
+                            Text(person.from)
+                        }
+                        
+                        
                         Spacer()
                         
-                        Text("Description: " + person.description)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.leading)
-                            .padding(.leading, -80)
+                        HStack{
+                            Text("Other rapname: ")
+                                .underline()
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.leading)
+                                .padding(.leading, 5)
+                            Text(person.otherNickName)
+                                .padding(.leading, 5)
+                        }
+                        
+                        
+                       
+                        Spacer()
+                            Text("Description: " )
+                                .underline()
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.leading)
+                                .padding(.leading, 5)
+                            Text(person.description)
+                            .padding(.leading, 5)
+                        
+                        
                     }
                         
                 
@@ -70,6 +105,6 @@ struct PersonalDetail: View {
 
 struct PersonalDetail_Previews: PreviewProvider {
     static var previews: some View {
-        PersonalDetail(person:rapper[0])
+        PersonalDetail(person:rapper[3])
     }
 }

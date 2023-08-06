@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		281503222A73ABBF009C8993 /* IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281503212A73ABBF009C8993 /* IOSApp.swift */; };
-		281503242A73ABBF009C8993 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281503232A73ABBF009C8993 /* ContentView.swift */; };
 		281503262A73ABC1009C8993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281503252A73ABC1009C8993 /* Assets.xcassets */; };
 		281503292A73ABC1009C8993 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 281503282A73ABC1009C8993 /* Preview Assets.xcassets */; };
 		281503332A73ABC1009C8993 /* IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281503322A73ABC1009C8993 /* IOSTests.swift */; };
@@ -24,6 +23,7 @@
 		28CA57072A7B83AD0052B98A /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA57062A7B83AD0052B98A /* ModelData.swift */; };
 		28CA57092A7B84550052B98A /* PersonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA57082A7B84550052B98A /* PersonRow.swift */; };
 		28CA570B2A7B87F10052B98A /* PersonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA570A2A7B87F10052B98A /* PersonList.swift */; };
+		28F645462A7F96D50075F46F /* isDarkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F645452A7F96D50075F46F /* isDarkMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,6 @@
 /* Begin PBXFileReference section */
 		2815031E2A73ABBF009C8993 /* IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		281503212A73ABBF009C8993 /* IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSApp.swift; sourceTree = "<group>"; };
-		281503232A73ABBF009C8993 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		281503252A73ABC1009C8993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		281503282A73ABC1009C8993 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2815032E2A73ABC1009C8993 /* IOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +63,7 @@
 		28CA57062A7B83AD0052B98A /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		28CA57082A7B84550052B98A /* PersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRow.swift; sourceTree = "<group>"; };
 		28CA570A2A7B87F10052B98A /* PersonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonList.swift; sourceTree = "<group>"; };
+		28F645452A7F96D50075F46F /* isDarkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isDarkMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,6 @@
 			children = (
 				2815034B2A73ADAE009C8993 /* model */,
 				281503212A73ABBF009C8993 /* IOSApp.swift */,
-				281503232A73ABBF009C8993 /* ContentView.swift */,
 				2815034C2A73ADC3009C8993 /* view */,
 				281503252A73ABC1009C8993 /* Assets.xcassets */,
 				281503272A73ABC1009C8993 /* Preview Content */,
@@ -169,6 +168,7 @@
 				28CA570A2A7B87F10052B98A /* PersonList.swift */,
 				282582DC2A7CF56300D6B3AA /* MapView.swift */,
 				282582E22A7CF92400D6B3AA /* WelcomeView.swift */,
+				28F645452A7F96D50075F46F /* isDarkMode.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -304,10 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F645462A7F96D50075F46F /* isDarkMode.swift in Sources */,
 				281503502A73AED1009C8993 /* CircleImage.swift in Sources */,
 				281503562A73B27A009C8993 /* Person.swift in Sources */,
 				28CA57092A7B84550052B98A /* PersonRow.swift in Sources */,
-				281503242A73ABBF009C8993 /* ContentView.swift in Sources */,
 				28CA57052A7B82970052B98A /* PersonalDetail.swift in Sources */,
 				281503582A73B5AC009C8993 /* GreetingView.swift in Sources */,
 				282582E32A7CF92400D6B3AA /* WelcomeView.swift in Sources */,
@@ -470,9 +470,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IOS/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -480,6 +482,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,6 +490,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = rmit.edu.vn.IOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -498,9 +502,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"IOS/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -508,6 +514,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -515,6 +522,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = rmit.edu.vn.IOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -13,6 +13,7 @@ struct Person : Identifiable, Codable{
     var id : Int
     var name: String
     var nickname: String
+    var otherNickName: String
     var birth: String
     var from: String
     var description: String

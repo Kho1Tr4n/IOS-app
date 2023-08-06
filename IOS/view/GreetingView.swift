@@ -7,17 +7,24 @@
 
 import SwiftUI
 
+//enum Theme {
+//    static let dark = Color("Dark")
+//    static let light = Color("Light")
+//}
 
 struct GreetingView: View {
     @State var showAlert:Bool
     @Binding var active:Bool
+    
+    
+    
     var body: some View {
         ZStack {
-            Color(.white)
-                .edgesIgnoringSafeArea(.all)
+//            Color(isDarkMode ? "Dark" : "Light").ignoresSafeArea(.all)
             
+            
+
             VStack{
-                Spacer()
                 Image("logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
@@ -32,11 +39,12 @@ struct GreetingView: View {
                     .multilineTextAlignment(.center)
 
                     Spacer()
+                
                 Button(action: {
                     active = false
                 }, label: {
                     Capsule()
-                      .fill(Color.black.opacity(0.2))
+                      .fill(Color.blue.opacity(10.2))
                       .padding(8)
                       .frame(height:80)
                       .overlay(Text("Get Started")
@@ -65,6 +73,11 @@ struct GreetingView: View {
 
 struct GreetingView_Previews: PreviewProvider {
     static var previews: some View {
+       
         GreetingView(showAlert: false , active: .constant(true))
+            
+            
+    
+    
     }
 }

@@ -15,9 +15,15 @@ struct PersonRow: View {
             person.image
                 .resizable()
                 .frame(width: 50, height: 50)
-            Text(person.name)
+                
+            Text(person.nickname + "\nBirthday: " + person.birth + "\nFrom: " + person.from)
+                .font(.body)
+                .fontWeight(.semibold)
+            Text("\n")
+                
             
         }
+        
     }
 }
 

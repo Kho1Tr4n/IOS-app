@@ -4,14 +4,15 @@
         "id" : 1,
         "name": "Nghiem Vu Hoang Long",
         "nickname": "MCK",
+        "otherNickName" : "Ngo, Nger, Young Itachi, MCKey",
         "birth": "02/03/1999",
         "from": "Ha Noi, Vietnam",
         "imageName": "mck",
         "description": "A male rapper, singer and songwriter from Vietnam. He is known as MCK also can be Ngo or Nger is a rapper who writes lyrics in the style of rap melody, before competing in the Rap Viet program he was known for songs such as Rap Cham Thoi, Tinh Dang Nhu ly ca phe (with Nan), Thu Do Cypher, etc",
         
         "coordinates": {
-            "latitude": 10.758256325746386,
-            "longitude": 106.67228491141948
+            "latitude": 21.0278,
+            "longitude": 105.8342
         }
     },
     
@@ -19,28 +20,30 @@
         "id" : 2,
         "name": "Nguyen Thao Linh",
         "nickname": "Tlinh",
+        "otherNickName" : "mun, txinh",
         "birth": "07/10/2000",
         "from": "Ha Noi, Vietnam",
-        "imageName": "",
+        "imageName": "tlinh",
         "description": "She participated in Rap Viet season 1 and joined Coach Suboi's team. She has HIT songs such as Thich Qua Rui Na, Tinh Yeu Ban Biu, Vut Zac, etc. T Linh comes from a family with a tradition of Medicine, both her father and mother are dentists, even TLinh used to be a doctor. student at a prestigious medical school, but after realizing her true passion was music, she stopped studying. Before joining Rap Viet, TLinh was a member of the Hanoi HipHop dance group - Last Fire Crew.",
         
         "coordinates": {
-            "latitude": 10.758256325746386,
-            "longitude": 106.67228491141948
+            "latitude": 21.0278,
+            "longitude": 105.8342
         }
     }, 
      {
         "id" : 3,
         "name": "Bui The Anh",
         "nickname": "Andree",
+        "otherNickName" : "Anh Baus",
         "birth": "18/06/1987",
         "from": "Toronto, Canada",
-        "imageName": "",
+        "imageName": "andree",
         "description": "Andree ranked 882th most famous in the world and 159th in the list of Popular Singers. He is one of the most famous Saigon rappers ever. Andree has a huge fan base in North America and Vietnam. Andree's rap style includes 'bling' and the current African-American rapper's style. His lyrics express the glamour and fashion of hip-hop culture, including cars, gold chains, girls, and more.",
         
         "coordinates": {
-            "latitude": 10.758256325746386,
-            "longitude": 106.67228491141948
+            "latitude": 43.6532,
+            "longitude": -79.347015
         }
     }, 
 
@@ -48,9 +51,10 @@
         "id" : 4,
         "name": "Tran Thien Thanh Bao",
         "nickname": "B Ray",
+        "otherNickName" : "B Rizzle, Bao, Bao Thanh Thien",
         "birth": "11/10/1993",
         "from": "Vietnam",
-        "imageName": "",
+        "imageName": "bray",
         "description": "He used to be a professional rapper of Underground Vietnam. He has a unique, diverse and skilful way of using skills. B Ray's works reflect the reality of life and criticize social evils, bad habits, and the dictatorship of the regime at that time. In 2018-2019, B Ray was entangled in many different scandals, then he showed signs of entering showbiz with many well-received mainstream products such as Dau do, Con Trai Cung, Ex's hate me, Cao Oc 20, Yeu Nhu Tre Con, Con Gai Ruou,...",
         
         "coordinates": {
@@ -63,9 +67,10 @@
         "id" : 5,
         "name": "Huynh Cong Hieu",
         "nickname": "Dick",
+        "otherNickName" : "Dickator, Hieu Sandy",
         "birth": "19/11/1997",
         "from": "Vietnam",
-        "imageName": "",
+        "imageName": "dick",
         "description": "He is the founder of Ban Co Tai Ma, a famous freestyle rap group in the Vietnamese rap community. Dick's music does not have negative words or an unhealthy lifestyle, on the contrary, he raps about the life around him through a rustic, simple but sparkling perspective of youth. According to Dick's share, it was the difficult time in a wheelchair that helped him feel more about life and that was also Dick's greatest inspiration in music.",
         
         "coordinates": {
@@ -77,23 +82,25 @@
         "id" : 6,
         "name": "Nguyen Hoang Long",
         "nickname": "Low G",
+        "otherNickName" : "Chu toa",
         "birth": "23/07/1997",
         "from": "Vietnam",
-        "imageName": "",
+        "imageName": "low g",
         "description": "He has a distinctive rap voice as well as a smooth rap ability that is superior to many new generation young rappers. Low G is also known to be able to rap English and freestyle quite well. The phrase 'Tao ki nguc fan' from a home-made Cypher song has also been trending for a while.",
         
         "coordinates": {
-            "latitude": 10.758256325746386,
-            "longitude": 106.67228491141948
+            "latitude": 21.0278,
+            "longitude": 105.8342
         }
     }, 
     {
         "id" : 7,
         "name": "Pham Hoang Khoa",
         "nickname": "Karik",
+        "otherNickName" : "Rik, Pha",
         "birth": "12/04/1989",
         "from": "Vietnam",
-        "imageName": "",
+        "imageName": "karik",
         "description": "He is a famous Vietnamese rapper and singer, has been active in the underground and was a part of the North-South beef in 2013. Following the path of a Rapper since 2008 and officially performing professionally since 2011, he is honoured to be a rapper. The first Rap artist to win the MTV Vietnam Award 2012 – 2013. He was loved by the audience through a series of outstanding Hits: Anh Khong Doi Qua, Nguoi La Oi, Rac Roi, and Nguoi Viet Nam...",
         
         "coordinates": {

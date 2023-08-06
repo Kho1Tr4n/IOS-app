@@ -7,11 +7,19 @@
 
 import SwiftUI
 
+enum Theme {
+    static let color = Color("Color")
+}
+
 @main
+
 struct IOSApp: App {
+    @AppStorage("isDarkMode") private var isDarkMode = false
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IOS.isDarkMode()
+            WelcomeView()
+                .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }

@@ -7,22 +7,23 @@
 
 import SwiftUI
 
+
 struct PersonList: View {
     var body: some View {
-        
-        NavigationView{
-            List (rapper){ persons in
-            NavigationLink {
-                PersonalDetail(person:persons)
-                
-            } label: {PersonRow(person: persons)
-                
-            }
-            .navigationTitle("Rapper")
-                
-            }
-        }
             
+            NavigationView{
+                    List (rapper){ persons in
+                        NavigationLink {
+                            PersonalDetail(person:persons)
+                            
+                        } label: {PersonRow(person: persons)
+                            
+                        }
+                        .navigationTitle("Rapper")
+                    }
+                
+                
+            }
         
     }
 }
